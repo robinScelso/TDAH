@@ -174,6 +174,7 @@
 		F530CBF928761F33006B4009 /* LogbookService */ = {
 			isa = PBXGroup;
 			children = (
+				F530CC0228762177006B4009 /* ToolsService */,
 			);
 			path = LogbookService;
 			sourceTree = "<group>";
@@ -211,6 +212,37 @@
 			children = (
 			);
 			path = UpdateAccount;
+			sourceTree = "<group>";
+		};
+		F530CC0228762177006B4009 /* ToolsService */ = {
+			isa = PBXGroup;
+			children = (
+				F530CC052876226C006B4009 /* RemoveService */,
+				F530CC0428762263006B4009 /* UpdateService */,
+				F530CC0328762253006B4009 /* AddingTools */,
+			);
+			path = ToolsService;
+			sourceTree = "<group>";
+		};
+		F530CC0328762253006B4009 /* AddingTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddingTools;
+			sourceTree = "<group>";
+		};
+		F530CC0428762263006B4009 /* UpdateService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UpdateService;
+			sourceTree = "<group>";
+		};
+		F530CC052876226C006B4009 /* RemoveService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoveService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
