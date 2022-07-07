@@ -16,6 +16,7 @@
 		F51F7B4127E0A19500EC269D /* TDAHUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F7B4027E0A19500EC269D /* TDAHUITestsLaunchTests.swift */; };
 		F51F7B5327E0BD6700EC269D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F7B5227E0BD6700EC269D /* User.swift */; };
 		F51F7B5527E0C23600EC269D /* Tdah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F7B5427E0C23600EC269D /* Tdah.swift */; };
+		F530CC072876BB3E006B4009 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530CC062876BB3E006B4009 /* Concentration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F51F7B4027E0A19500EC269D /* TDAHUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAHUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F51F7B5227E0BD6700EC269D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F51F7B5427E0C23600EC269D /* Tdah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tdah.swift; sourceTree = "<group>"; };
+		F530CC062876BB3E006B4009 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				F51F7B5227E0BD6700EC269D /* User.swift */,
 				F51F7B5427E0C23600EC269D /* Tdah.swift */,
+				F530CC062876BB3E006B4009 /* Concentration.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51F7B2627E0A19300EC269D /* ContentView.swift in Sources */,
+				F530CC072876BB3E006B4009 /* Concentration.swift in Sources */,
 				F51F7B2427E0A19300EC269D /* TDAHApp.swift in Sources */,
 				F51F7B5527E0C23600EC269D /* Tdah.swift in Sources */,
 				F51F7B5327E0BD6700EC269D /* User.swift in Sources */,
