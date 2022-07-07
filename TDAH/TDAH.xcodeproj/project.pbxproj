@@ -17,6 +17,12 @@
 		F51F7B5327E0BD6700EC269D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F7B5227E0BD6700EC269D /* User.swift */; };
 		F51F7B5527E0C23600EC269D /* Tdah.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F7B5427E0C23600EC269D /* Tdah.swift */; };
 		F530CC072876BB3E006B4009 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530CC062876BB3E006B4009 /* Concentration.swift */; };
+		F530CC0A2876D63E006B4009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530CC092876D63E006B4009 /* HomeView.swift */; };
+		F530CC0C2876E17C006B4009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F530CC0B2876E17C006B4009 /* GoogleService-Info.plist */; };
+		F530CC0F28770A3B006B4009 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F530CC0E28770A3B006B4009 /* FirebaseAnalytics */; };
+		F530CC1128770A3B006B4009 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F530CC1028770A3B006B4009 /* FirebaseAnalyticsSwift */; };
+		F530CC1328770A3B006B4009 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = F530CC1228770A3B006B4009 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		F530CC1628770EBC006B4009 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F530CC1528770EBC006B4009 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,8 @@
 		F51F7B5227E0BD6700EC269D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F51F7B5427E0C23600EC269D /* Tdah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tdah.swift; sourceTree = "<group>"; };
 		F530CC062876BB3E006B4009 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		F530CC092876D63E006B4009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F530CC0B2876E17C006B4009 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F530CC1628770EBC006B4009 /* Kingfisher in Frameworks */,
+				F530CC1128770A3B006B4009 /* FirebaseAnalyticsSwift in Frameworks */,
+				F530CC1328770A3B006B4009 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				F530CC0F28770A3B006B4009 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +112,7 @@
 		F51F7B2227E0A19300EC269D /* TDAH */ = {
 			isa = PBXGroup;
 			children = (
+				F530CC0B2876E17C006B4009 /* GoogleService-Info.plist */,
 				F51F7B4E27E0A27300EC269D /* Views */,
 				F51F7B4F27E0A37B00EC269D /* DB */,
 				F51F7B4D27E0A26200EC269D /* Objects */,
@@ -148,6 +161,7 @@
 		F51F7B4E27E0A27300EC269D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F530CC082876D61B006B4009 /* Home */,
 				F530CBFC28761FE2006B4009 /* MedicalService */,
 				F530CBFB28761FAA006B4009 /* FacebookService */,
 				F530CBF928761F33006B4009 /* LogbookService */,
@@ -248,6 +262,14 @@
 			path = RemoveService;
 			sourceTree = "<group>";
 		};
+		F530CC082876D61B006B4009 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F530CC092876D63E006B4009 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +286,12 @@
 			dependencies = (
 			);
 			name = TDAH;
+			packageProductDependencies = (
+				F530CC0E28770A3B006B4009 /* FirebaseAnalytics */,
+				F530CC1028770A3B006B4009 /* FirebaseAnalyticsSwift */,
+				F530CC1228770A3B006B4009 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				F530CC1528770EBC006B4009 /* Kingfisher */,
+			);
 			productName = TDAH;
 			productReference = F51F7B2027E0A19300EC269D /* TDAH.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +364,10 @@
 				Base,
 			);
 			mainGroup = F51F7B1727E0A19300EC269D;
+			packageReferences = (
+				F530CC0D28770A3B006B4009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F530CC1428770EBC006B4009 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F51F7B2127E0A19300EC269D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +386,7 @@
 			files = (
 				F51F7B2B27E0A19500EC269D /* Preview Assets.xcassets in Resources */,
 				F51F7B2827E0A19500EC269D /* Assets.xcassets in Resources */,
+				F530CC0C2876E17C006B4009 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +414,7 @@
 				F51F7B2627E0A19300EC269D /* ContentView.swift in Sources */,
 				F530CC072876BB3E006B4009 /* Concentration.swift in Sources */,
 				F51F7B2427E0A19300EC269D /* TDAHApp.swift in Sources */,
+				F530CC0A2876D63E006B4009 /* HomeView.swift in Sources */,
 				F51F7B5527E0C23600EC269D /* Tdah.swift in Sources */,
 				F51F7B5327E0BD6700EC269D /* User.swift in Sources */,
 			);
@@ -709,6 +743,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F530CC0D28770A3B006B4009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		F530CC1428770EBC006B4009 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F530CC0E28770A3B006B4009 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F530CC0D28770A3B006B4009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F530CC1028770A3B006B4009 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F530CC0D28770A3B006B4009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		F530CC1228770A3B006B4009 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F530CC0D28770A3B006B4009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		F530CC1528770EBC006B4009 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F530CC1428770EBC006B4009 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F51F7B1827E0A19300EC269D /* Project object */;
 }
