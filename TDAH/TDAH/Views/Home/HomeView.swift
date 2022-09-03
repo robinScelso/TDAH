@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        NavigationView{
-            ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)){
-                ScrollView{
-                    VStack{
-                        
-                    }
-                }
+        VStack{
+            Text("TDAH")
+            Text("Welcome")
+            TextField("Pseudo", text: $username)
+            TextField("Password", text: $password)
+            HStack{
+                Button("Sign In", action: signIn)
+                    .padding()
+                Button("Forgot password", action: forgotPassword)
             }
+            
         }
+        
     }
 }
 
@@ -25,4 +33,12 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
+}
+
+func signIn() -> (){
+    
+}
+
+func forgotPassword() -> (){
+    
 }
